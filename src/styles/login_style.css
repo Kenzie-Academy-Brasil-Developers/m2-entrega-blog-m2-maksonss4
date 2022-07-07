@@ -1,0 +1,78 @@
+:root {
+    --azul: #6495ED;
+    --branco: #ffffff;
+    --amarelo: #EDBC64;
+    --cinza: #F3F3F3;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header{    
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+a{
+    padding: 5px;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+div{
+    background-color: var(--azul);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+}
+
+h2{
+    width: 127px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--branco);
+    text-align: center;
+}
+
+input{
+    width: 246px;
+    height: 42px;
+    border: 0;
+    background-color: var(--cinza);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+button{
+    cursor: pointer;
+    width: 132px;
+    height: 42px;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border-radius: 5px;
+}
