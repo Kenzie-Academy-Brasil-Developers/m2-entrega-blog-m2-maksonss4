@@ -1,8 +1,8 @@
-import { Blog } from "./Autenticacao_Api_blog.js"
+import { Blog } from "./autenticacao_Api_blog.js"
 
 const formCadastrar = document.querySelector("#formCadastrar")
 
-formCadastrar.addEventListener("submit", (event) => {
+formCadastrar.addEventListener("submit", async (event) => {
     event.preventDefault()
 
     const data = {}    
@@ -14,5 +14,9 @@ formCadastrar.addEventListener("submit", (event) => {
         }
     })
 
-    Blog.cadastro(data)
+    const cadastro = await Blog.cadastro(data)
+
+    if(cadastro.id !== undefined){
+        location.href = "../../index_login.html"
+    }
 })

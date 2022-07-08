@@ -1,4 +1,5 @@
-import { Blog } from "./Autenticacao_Api_blog.js"
+import { Blog } from "./autenticacao_Api_blog.js"
+
 
 const formLogin = document.querySelector("#formLogin")
 
@@ -15,5 +16,14 @@ formLogin.addEventListener("submit", (event) => {
     })
 
     Blog.login(data)
-})
 
+    
+    setTimeout(() => {
+        const idLocalStorage = JSON.parse(localStorage.getItem("@kenzie_blog:id"))
+
+        if(idLocalStorage !== null){
+            location.href = "./src/pages/homepage.html"
+        }
+    }, 1000)
+
+})

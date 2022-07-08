@@ -1,0 +1,172 @@
+:root {
+    --azul: #6495ED;
+    --branco: #ffffff;
+    --amarelo: #EDBC64;
+    --cinza: #F3F3F3;
+    --vermelho: #ED6464;
+    --cinzaEscuro: #989898;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--cinza);
+}
+
+header{    
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.buttonAmarelo{
+    padding: 5px;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main form input{
+    height: 130px;
+    border: 1px solid black;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    background-color: var(--branco);
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imgUsuario{
+    width: 40px;
+    height: 40px;
+    border-radius: 2000px;
+}
+
+li div h3{
+    font-weight: bold;
+}
+
+.divConteudo{
+    text-align: center;    
+}
+
+.divEdit{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.buttonApagar{
+    background-color: transparent;
+    color: var(--vermelho);
+}
+
+.buttonEditar{
+    background-color: transparent;
+    color: var(--azul);
+}
+
+.pData{
+    color: var(--cinzaEscuro);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+#imgFecharEdit{
+    width: 20px;
+    border-radius: 10px;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;    
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.modal_inner{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 20px;
+    border-top: 10px solid var(--azul);
+    border-bottom: 20px solid var(--azul);
+}
+
+.modal_inner form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.divFecharEdit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divFecharEdit button figure{
+    height: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 700;
+}

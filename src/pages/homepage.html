@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/homepage_style.css">
+</head>
+<body>
+    <header>
+        <h1>Logado</h1>
+        <button class="buttonAmarelo" id="logout">Logout</button>
+    </header>
+
+    <main>
+        <form id="formPost">
+            <textarea placeholder="Escreva seu post incrível!" name="content" cols="30" rows="5"></textarea>
+            <button class="buttonAmarelo" type="submit">Postar</button>
+        </form>
+
+        <ul class="ulPosts">
+
+        </ul>
+    </main>
+
+    <div class="modal">
+        <div class="container">
+            <div class="modal_inner">
+                <div class="divFecharEdit">
+                    <h2>Editar post</h2>
+                    <button type="button">
+                        <figure>
+                            <img id="imgFecharEdit" src="../svg/x.svg" alt="fechar">
+                        </figure>
+                    </button>
+                </div>
+    
+                <form class="modal__form">
+                    <textarea placeholder="Digite aqui" name="content" cols="35" rows="5"></textarea>
+                    <button class="buttonAmarelo" type="submit">Editar</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script type="module" src="../script/homepage_script.js"></script>
+</body>
+</html>
