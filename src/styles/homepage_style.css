@@ -44,6 +44,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;    
 }
 
 main form{
@@ -52,6 +54,7 @@ main form{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    
 }
 
 main form input{
@@ -63,6 +66,8 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100vw;
+    max-width: 500px;
 }
 
 li{
@@ -73,6 +78,7 @@ li{
     justify-content: space-between;
     border-radius: 15px;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    min-height: 100px;
 }
 
 .imgUsuario{
@@ -87,6 +93,10 @@ li div h3{
 
 .divConteudo{
     text-align: center;    
+    max-width: 213px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .divEdit{
@@ -94,6 +104,7 @@ li div h3{
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
+    gap: 8px;
 }
 
 .buttonApagar{

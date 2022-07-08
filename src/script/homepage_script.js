@@ -20,7 +20,7 @@ logout.addEventListener("click", () => {
     localStorage.removeItem("@kenzie_blog:token")
     localStorage.removeItem("@kenzie_blog:id")
 
-    location.href = "../../index_login.html"
+    location.href = "../../index.html"
 })
 
 formPost.addEventListener("submit", (event) => {

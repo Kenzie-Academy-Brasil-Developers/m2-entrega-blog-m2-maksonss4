@@ -17,6 +17,6 @@ formCadastrar.addEventListener("submit", async (event) => {
     const cadastro = await Blog.cadastro(data)
 
     if(cadastro.id !== undefined){
-        location.href = "../../index_login.html"
+        location.href = "../../index.html"
     }
 })
