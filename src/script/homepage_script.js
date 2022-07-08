@@ -5,7 +5,6 @@ const logout = document.querySelector("#logout")
 const formPost = document.querySelector("#formPost")
 const ul = document.querySelector(".ulPosts")
 
-
 async function renderizarPostagens (numeroDaPagina) {
     const pagina = await Blog.buscarPostagensPorPagina(numeroDaPagina)
     const postagens = pagina.data

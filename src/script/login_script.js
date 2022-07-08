@@ -3,7 +3,7 @@ import { Blog } from "./autenticacao_Api_blog.js"
 
 const formLogin = document.querySelector("#formLogin")
 
-formLogin.addEventListener("submit", (event) => {
+formLogin.addEventListener("submit", async (event) => {
     event.preventDefault()
 
     const data = {}
@@ -15,7 +15,7 @@ formLogin.addEventListener("submit", (event) => {
         }
     })
 
-    Blog.login(data)
+    await Blog.login(data)
 
     
     setTimeout(() => {
