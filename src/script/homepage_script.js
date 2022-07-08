@@ -1,4 +1,4 @@
-import { Blog } from "./Autenticacao_Api_blog.js"
+import { Blog } from "./api.blog.js"
 import { CriarLi } from "./criarLi.js"
 
 const logout = document.querySelector("#logout")

@@ -1,4 +1,4 @@
-import { Blog } from "./autenticacao_Api_blog.js"
+import { Blog } from "./api.blog.js"
 
 
 const formLogin = document.querySelector("#formLogin")
